@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from "motion/react";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useActor } from "../hooks/useActor";
 import { useGetHighScore } from "../hooks/useQueries";
+import GoogleAdBanner from "./GoogleAdBanner";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -1052,6 +1053,9 @@ export default function SnakeGame() {
           )}
         </AnimatePresence>
       </div>
+
+      {/* Google Ad Banner */}
+      <GoogleAdBanner />
 
       {/* Mobile controls */}
       <div className="mt-3 flex flex-col items-center gap-1.5">
